@@ -166,6 +166,33 @@
 \newcounter{charwistmpmodcount}
 \newcounter{charchatmpmodcount}
 
+\newcounter{charprecount}
+\newcounter{charpremodcount}
+\newcounter{charpretmpadjcount}
+\newcounter{charpretmpmodcount}
+
+\newcounter{charmanicount}
+\newcounter{charmanimodcount}
+\newcounter{charmanitmpadjcount}
+\newcounter{charmanitmpmodcount}
+
+\newcounter{charcompcount}
+\newcounter{charcompmodcount}
+\newcounter{charcomptmpadjcount}
+\newcounter{charcomptmpmodcount}
+
+\newcounter{charsancount}
+\newcounter{charsanmodcount}
+\newcounter{charsantmpadjcount}
+\newcounter{charsantmpmodcount}
+
+\newcounter{characucount}
+\newcounter{characumodcount}
+\newcounter{characutmpadjcount}
+\newcounter{characutmpmodcount}
+
+
+% Physical
 
 \newcommand\charstr[1]{
   \setcounter{charstrcount}{0}
@@ -179,29 +206,56 @@
   \setcounter{chardexmodcount}{0}
   \setcounter{chardexmodcount}{(\value{chardexcount}-10)/\real{2}}
 }
+
 \newcommand\charcon[1]{
   \setcounter{charconcount}{0}
   \setcounter{charconcount}{#1}
   \setcounter{charconmodcount}{0}
   \setcounter{charconmodcount}{(\value{charconcount}-10)/\real{2}}
 }
+
+% Social
+
+\newcommand\charpre[1]{
+  \setcounter{charprecount}{0}
+  \setcounter{charprecount}{#1}
+  \setcounter{charpremodcount}{0}
+  \setcounter{charpremodcount}{(\value{charprecount}-10)/\real{2}}
+}
+
+\newcommand\charmani[1]{
+  \setcounter{charmanicount}{0}
+  \setcounter{charmanicount}{#1}
+  \setcounter{charmanimodcount}{0}
+  \setcounter{charmanimodcount}{(\value{charmanicount}-10)/\real{2}}
+}
+
+\newcommand\charcomp[1]{
+  \setcounter{charcompcount}{0}
+  \setcounter{charcompcount}{#1}
+  \setcounter{charcompmodcount}{0}
+  \setcounter{charcompmodcount}{(\value{charcompcount}-10)/\real{2}}
+}
+
+% Mental
+
 \newcommand\charint[1]{
   \setcounter{charintcount}{0}
   \setcounter{charintcount}{#1}
   \setcounter{charintmodcount}{0}
   \setcounter{charintmodcount}{(\value{charintcount}-10)/\real{2}}
 }
-\newcommand\charwis[1]{
-  \setcounter{charwiscount}{0}
-  \setcounter{charwiscount}{#1}
-  \setcounter{charwismodcount}{0}
-  \setcounter{charwismodcount}{(\value{charwiscount}-10)/\real{2}}
+\newcommand\characu[1]{
+  \setcounter{characucount}{0}
+  \setcounter{characucount}{#1}
+  \setcounter{characumodcount}{0}
+  \setcounter{characumodcount}{(\value{characucount}-10)/\real{2}}
 }
-\newcommand\charcha[1]{
-  \setcounter{charchacount}{0}
-  \setcounter{charchacount}{#1}
-  \setcounter{charchamodcount}{0}
-  \setcounter{charchamodcount}{(\value{charchacount}-10)/\real{2}}
+\newcommand\charsan[1]{
+  \setcounter{charsancount}{0}
+  \setcounter{charsancount}{#1}
+  \setcounter{charsanmodcount}{0}
+  \setcounter{charsanmodcount}{(\value{charsancount}-10)/\real{2}}
 }
 
 \newcommand\plusminus[1]{

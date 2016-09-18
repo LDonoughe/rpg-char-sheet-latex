@@ -23,31 +23,49 @@
     \end{tabular}}
 
   %% Labels
-  \put(0,512){\makebox(28,3){\tiny\scshape attribute}}
-  \stretchlabels{33}{512}{102}{ability score,  ability modifier, Temp Adjustment, Temp Modifier}
+  \put(0,572){\makebox(28,3){\tiny\scshape attribute}}
+  \stretchlabels{33}{572}{102}{ability score,  ability modifier, Temp Adjustment, Temp Modifier}
   %% STR
-  \titlebox{0}{500}{28}{STR}{strength}
-\stretchattributes{33}{500}{102}{\arabic{charstrcount},\plusminus{charstrmodcount},\plusminus{charstrtmpadjcount},\plusminus{charstrtmpmodcount}}
+  \titlebox{0}{560}{28}{STR}{strength}
+\stretchattributes{33}{560}{102}{\arabic{charstrcount},\plusminus{charstrmodcount},\plusminus{charstrtmpadjcount},\plusminus{charstrtmpmodcount}}
 
   %% DEX
-  \titlebox{0}{488}{28}{DEX}{dexterity}
-  \stretchattributes{33}{488}{102}{\arabic{chardexcount},\plusminus{chardexmodcount},\plusminus{chardextmpadjcount},\plusminus{chardextmpmodcount}}
+  \titlebox{0}{548}{28}{DEX}{dexterity}
+  \stretchattributes{33}{548}{102}{\arabic{chardexcount},\plusminus{chardexmodcount},\plusminus{chardextmpadjcount},\plusminus{chardextmpmodcount}}
   
   %% CON
-  \titlebox{0}{476}{28}{CON}{constitution}
-  \stretchattributes{33}{476}{102}{\arabic{charconcount},\plusminus{charconmodcount},\plusminus{charcontmpadjcount},\plusminus{charcontmpmodcount}}
+  \titlebox{0}{536}{28}{CON}{constitution}
+  \stretchattributes{33}{536}{102}{\arabic{charconcount},\plusminus{charconmodcount},\plusminus{charcontmpadjcount},\plusminus{charcontmpmodcount}}
+  
+  %% PRE
+  \titlebox{0}{524}{28}{Pre}{Presence}
+  \stretchattributes{33}{524}{102}{\arabic{charprecount},\plusminus{charpremodcount},\plusminus{charpretmpadjcount},\plusminus{charpretmpmodcount}}
+  
+    %% MANI
+  \titlebox{0}{512}{28}{Mani}{Manipulation}
+  \stretchattributes{33}{512}{102}{\arabic{charmanicount},\plusminus{charmanimodcount},\plusminus{charmanitmpadjcount},\plusminus{charmanitmpmodcount}}
+  
+    %% COMP
+  \titlebox{0}{500}{28}{Comp}{Composure}
+  \stretchattributes{33}{500}{102}{\arabic{charcompcount},\plusminus{charcompmodcount},\plusminus{charcomptmpadjcount},\plusminus{charcomptmpmodcount}}
   
   %% INT
-  \titlebox{0}{464}{28}{INT}{intelligence}
-  \stretchattributes{33}{464}{102}{\arabic{charintcount},\plusminus{charintmodcount},\plusminus{charinttmpadjcount},\plusminus{charinttmpmodcount}}
+  \titlebox{0}{488}{28}{INT}{intelligence}
+  \stretchattributes{33}{488}{102}{\arabic{charintcount},\plusminus{charintmodcount},\plusminus{charinttmpadjcount},\plusminus{charinttmpmodcount}}
+  
+    %% ACU
+  \titlebox{0}{476}{28}{ACU}{Acuity}
+  \stretchattributes{33}{476}{102}{\arabic{characucount},\plusminus{characumodcount},\plusminus{characutmpadjcount},\plusminus{characutmpmodcount}}
+  
+    %% SAN
+  \titlebox{0}{464}{28}{SAN}{Sanity}
+  \stretchattributes{33}{464}{102}{\arabic{charsancount},\plusminus{charsanmodcount},\plusminus{charsantmpadjcount},\plusminus{charsantmpmodcount}}
 
   %% WIS
-  \titlebox{0}{452}{28}{WIS}{wisdom}
-  \stretchattributes{33}{452}{102}{\arabic{charwiscount},\plusminus{charwismodcount},\plusminus{charwistmpadjcount},\plusminus{charwistmpmodcount}}
+  %\titlebox{0}{452}{28}{WIS}{wisdom}
+  %\stretchattributes{33}{452}{102}{\arabic{charwiscount},\plusminus{charwismodcount},\plusminus{charwistmpadjcount},\plusminus{charwistmpmodcount}}
 
-  %% CHA
-  \titlebox{0}{440}{28}{CHA}{charisma}
-  \stretchattributes{33}{440}{102}{\arabic{charchacount},\plusminus{charchamodcount},\plusminus{charchatmpadjcount},\plusminus{charchatmpmodcount}}
+
 
 
   %% HP
@@ -148,7 +166,7 @@
   \end{tabular}}
 
 
-
+\iffalse
   \skill{characrobaticsclassskillcount}{210}{500}{Acrobatics}{Dex}{chardexmodcount}{characrobaticsrankscount}{characrobaticsmiscmodcount}
   \skill{charappraiseclassskillcount}{210}{490}{Appraise}{Int}{charintmodcount}{charappraiserankscount}{charappraisemiscmodcount}
   \skill{charbluffclassskillcount}{210}{480}{Bluff}{Cha}{charchamodcount}{charbluffrankscount}{charbluffmiscmodcount}
@@ -156,7 +174,7 @@
   \skill{charcraftoneclassskillcount}{210}{460}{Craft (optional)}{Int}{charintmodcount}{charcraftonerankscount}{charcraftonemiscmodcount}
   \skill{charcrafttwoclassskillcount}{210}{450}{Craft (optional)}{Int}{charintmodcount}{charcrafttworankscount}{charcrafttwomiscmodcount}
   \skill{charcraftthreeclassskillcount}{210}{440}{Craft (optional)}{Int}{charintmodcount}{charcraftthreerankscount}{charcraftthreemiscmodcount}
-  \skill{chardiplomacyclassskillcount}{210}{430}{Diplomacy}{Cha}{charchamodcount}{chardiplomacyrankscount}{chardiplomacymiscmodcount}
+  \skill{chardiplomacyclassskillcount}{210}{430}{Diplomacy}{Cha}{modcount}{chardiplomacyrankscount}{chardiplomacymiscmodcount}
   \trainskill{chardisabledeviceclassskillcount}{210}{420}{Disable Device}{Dex}{chardexmodcount}{chardisabledevicerankscount}{chardisabledevicemiscmodcount}
   \skill{chardisguiseclassskillcount}{210}{410}{Disguise}{Cha}{charchamodcount}{chardisguiserankscount}{chardisguisemiscmodcount}
   \skill{charescapeartistclassskillcount}{210}{400}{Escape Artist}{Dex}{chardexmodcount}{charescapeartistrankscount}{charescapeartistmiscmodcount}
@@ -189,6 +207,7 @@
   \skill{charswimclassskillcount}{210}{130}{Swim}{Str}{charstrmodcount}{charswimrankscount}{charswimmiscmodcount}
   \trainskill{charusemagicdeviceclassskillcount}{210}{120}{Use Magic Device}{Cha}{charchamodcount}{charusemagicdevicerankscount}{charusemagicdevicemiscmodcount}
   \put(214.5,110){\parbox[b][10\unitlength][c]{100\unitlength}{ \tiny\scshape $\footnotesize\cancel\square$  Class Skill\hspace{2ex} * trained only}}
+ \fi
 
   \put(215,100){\parbox[b][10\unitlength][c]{200\unitlength}{\small\scshape Conditional Modifiers:}}
   \put(215,55){\parbox[b][43\unitlength][t]{200\unitlength}{\itshape blah blah blah  blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah}}
